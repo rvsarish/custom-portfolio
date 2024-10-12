@@ -9,13 +9,18 @@ const Links = () => {
   ];
 
   return (
-    <section id="links" className="bg-white p-6 rounded-lg shadow-lg">
-      <h2 className="text-3xl font-bold text-center text-indigo-600 mb-4">Important Links</h2>
+    <section id="links" className="bg-white p-8 rounded-lg shadow-lg max-w-lg mx-auto">
+      <h2 className="text-3xl font-bold text-center text-indigo-600 mb-6">Important Links</h2>
       <ul className="space-y-4">
         {links.map((link, index) => (
           <li key={index} className="flex items-center space-x-2">
-            <span className="text-indigo-600">{link.icon}</span>
-            <a href={link.href} target="_blank" rel="noopener noreferrer" className="text-indigo-500 hover:underline">
+            <span className="text-2xl">{link.icon}</span>
+            <a
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-indigo-500 hover:underline text-lg"
+            >
               {link.label}
             </a>
           </li>

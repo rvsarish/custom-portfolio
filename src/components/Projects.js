@@ -30,14 +30,14 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="bg-white p-6 rounded-lg shadow-lg">
-      <h2 className="text-3xl font-bold text-center text-indigo-600 mb-4">Projects</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <section id="projects" className="bg-gray-50 py-8 px-4 rounded-lg shadow-lg">
+      <h2 className="text-4xl font-extrabold text-center text-indigo-700 mb-8">Projects</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projectList.map((project, index) => (
-          <div key={index} className="bg-gray-100 p-4 rounded-lg shadow transition-transform transform hover:scale-105">
-            <h3 className="text-xl font-semibold text-indigo-600">{project.title}</h3>
-            <p className="text-gray-700">{project.description}</p>
-            <a href={project.link} className="text-indigo-500 hover:underline mt-2 inline-block">
+          <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
+            <h3 className="text-2xl font-bold text-indigo-600 mb-3">{project.title}</h3>
+            <p className="text-gray-700 mb-4">{project.description}</p>
+            <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-indigo-500 hover:text-indigo-700 font-semibold transition-colors duration-200">
               View Project
             </a>
           </div>
